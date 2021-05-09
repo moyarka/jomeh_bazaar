@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<style>
+    * { 
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    }
+
+    input[type=text] {
+        width: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid navy;
+        border-radius: 4px;
+    }
+
+    .logout-button {
+    background-color: white; 
+    border: 2px solid red;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: black;
+    display: inline-block;
+    font-size: 16px;
+    }
+    a.logout-button:hover {
+        background-color: palevioletred;
+    }
+    input[type=submit] {
+    background-color: white; 
+    border: 2px solid navy;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: black;
+    display: inline-block;
+    font-size: 16px;
+    }
+    input[type=submit]:hover {
+        background-color: lightblue;
+    }
+</style>
+<body>
+    <h1>Jomeh Bazaar</h1>
+    <h2>admin</h2>
+    <form method="post" action="/manager_home">
+        <img src="manager.png"><br><br>
+        Browse a file to upload
+        <input type="text" name="file">
+            Choose product type
+        <select name="type" class="select">
+            <option value="mobile">mobile</option>
+            <option value="car">car</option>
+            <option value="tv">tv</option>
+        </select>
+        <br><br><input type="submit" value="Upload">
+        <a href="/logout" class="logout-button">Log Out</a>
+    </form>
+</body>

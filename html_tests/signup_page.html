@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<style>
+    * { 
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+    input[type=text], input[type=password] {
+        width: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid red;
+        border-radius: 4px;
+    }
+
+    input[type=button], input[type=submit], input[type=reset] {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <h1>Jomeh Bazaar</h1>
+    <h2>Sign Up</h2>
+    <form method="post" action="/signup">
+        Email<br>   
+        <input type="text" name="email" placeholder="enter your email" required><br>
+        Username<br>
+        <input type="text" name="username" placeholder="enter your username" required><br>
+        Password<br>
+        <input type="password" name="password" placeholder="enter password" required><br>
+        Re-Enter Password<br>
+        <input type="password" name="re_pass" placeholder="re-enter password" required><br>
+        <input type="radio" name="type" value="buyer" checked>Buyer        
+        <input type="radio" name="type" value="seller">Seller<br>
+        <input type="submit" value="Sign Me Up!">
+    </form>
+</body>
+</html>

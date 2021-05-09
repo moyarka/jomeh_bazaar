@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            input[type=text] {
+                width: 40%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 2px solid red;
+                border-radius: 4px;
+            }
+            ul {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+            li {
+                float: left;
+            }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover:not(.active) 
+            {
+                background-color: #111;
+            }
+            .active {
+                background-color: #4CAF50;
+            }
+            input[type=button], input[type=submit], input[type=reset] {
+                background-color: white;
+                border: 2px solid teal;
+                color: black;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            input[type=submit]:hover {
+                background-color: lightseagreen;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/wallet">Wallet</a></li>
+            <li><a href="/view_cart">View Cart</a></li>
+            <li><a href="/compare">Compare Products</a></li>
+            <li><a href="/logout">Log Out</a></li>
+        </ul>
+        <br><h2>Jomeh Bazaar</h2><br>
+        <form method="post" action="/compare">
+            Product ID 1
+            <br><input type=text name="product_id_1" required><br>
+            Product ID 2
+            <br><input type="text" name="product_id_2" required><br>
+            <br><input type="submit" value="Compare">
+        </form>
+    </body>
+</html>
