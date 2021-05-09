@@ -1,8 +1,7 @@
-AP HTTP
+__Jomeh Bazaar__
 ===
-[![Travis (.org)](https://travis-ci.com/UTAP/APHTTP.svg)](https://travis-ci.com/UTAP/APHTTP)
-[![code style: LLVM](https://img.shields.io/badge/code_style-LLVM-brightgreen.svg)](https://llvm.org/docs/CodingStandards.html)
-[![Release](https://img.shields.io/github/release/UTAP/APHTTP.svg)](https://github.com/UTAP/APHTTP/releases/latest)
-[![Wiki](https://img.shields.io/badge/GitHub-Wiki-yellowgreen.svg)](https://github.com/UTAP/APHTTP/wiki)
+In our *Jomeh Bazaar*, you can join as a customer, order goods and feel the joy of shopping
+(with a student-level project!); you can also be a Seller and sell your merchandise at our shop.
 
-**AP HTTP::_server_** is a simple web application server-side blocking framework for C++ based on simplified versions of [W++](http://konteck.github.io/wpp/), [HappyHTTP](http://scumways.com/happyhttp/happyhttp.html), and [cpp-netlib](http://cpp-netlib.org/).
+Note: This Project is implemented with the [APHTTP](https://github.com/UTAP/APHTTP) front-end framework.
+
